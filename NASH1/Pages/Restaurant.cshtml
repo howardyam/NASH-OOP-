@@ -6,29 +6,27 @@
 
 <body>
 
-    <h1 class="mainResTitle">hello please choose the restaurant u want</h1>
-    <br/>
-    <br/>
+    <h1 class="mainSubTitle"></h1>
+    <br />
+    <br />
     <div class="cover">
-        <div class="box">
-            <img src="~/images/KFC.png" />
-            <h2>KFC</h2>
-            <a class="btn btn-primary mt-1" asp-area="" asp-page="KFC">Order</a>
+       
+            @foreach (var food in @Model.Menus.Restaurants)
+            {
+                var imagePath = "~/images/" + (food.RestaurantImage + ".png");
 
+                <div class="item-card2">
+                    <div id="item-card2">
+                        <img src="@imagePath" width="30px" height="100px" asp-append-version="true" />
 
-        </div>
-
-        <div class="box">
-            <img src="~/images/MCD.png" />
-            <h2>MCD</h2>
-            <a class="btn btn-primary mt-1" asp-area="" asp-page="MCD">Order</a>
-        </div>
-
-        <div class="box">
-            <img src="~/images/NicaPlus.png" />
-            <h2>Nica Plus</h2>
-            <a class="btn btn-primary mt-1" asp-area="" asp-page="NicaPlus">Order</a>
-        </div>
-
+                        <p id="item-name">@food.RestaurantName </p>
+                        <br>
+                        <br>
+                        <a class="btn btn-primary mt-1" asp-area="" asp-page="/FoodPage/@food.Pagename">Order</a>
+                    </div>
+                </div>
+            }
+        
     </div>
 </body>
+

@@ -1,0 +1,16 @@
+﻿@page
+@model NASH1.Pages.CheckoutPage.NicaPlus.NicaPlusCheckoutPageModel
+@{
+}
+<h1 class="mainTitle">
+    This is your food order 
+</h1>
+<h2 class="mainSubTitle">
+    Your driver is on the way, please be patient
+</h2>
+   <table class="table">   
+<tr><th>FoodName</th><th>FoodAmount</th><td>Sub Total(RM)</td></tr>  
+<tr><td>Chocolate Bingsu</td><td>@Model.ChocolateBingsu</td><td>@Model.ChocolateBingsuSubPrice</td></tr>  
+<tr><td>Mango Bingsu</td><td>@Model.MangoBingsu</td><td>@Model.MangoBingsuSubPrice</td></tr>  
+<tr><td>Total Price(RM)</td><td></td><td>@Model.FoodPrice</td></tr>  
+</table>  

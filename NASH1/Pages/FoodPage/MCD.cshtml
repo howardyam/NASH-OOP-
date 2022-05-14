@@ -1,0 +1,54 @@
+﻿@page
+@model NASH1.Pages.Restaurant.MCDModel
+@{
+}
+
+
+<body>
+    <h1 class="mainResSubTiltle"></h1>
+    <form method="post">
+        <div class="cover">
+            <div class="box">
+                <div id="item-card">
+                    <div id="card-top">
+                    </div>
+                    <img src="~/images/McBurger.png" width="200px" height="100px" />
+                    <p id="item-name">MCD Burger</p>
+                    <p id="item-price">RM10.00</p>
+                    <br />
+                    <br />
+                    <br />
+                    <input type="number" min="0" asp-for="Food.McBurger" placeholder="MCD Burger" />
+
+                </div>
+            </div>
+            <div class="box">
+                <div id="item-card">
+                    <img src="~/images/McFurryOreo.png" width="200px" height="100px" />
+                    <p id="item-name">MCD Flurry</p>
+                    <p id="item-price">RM8.00</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <input type="number" min="0" asp-for="Food.McFurryOreo" placeholder="MCD Flurry" />
+
+                </div>
+            </div>
+            <div class="box">
+                <div id="item-card">
+                    <img src="~/images/ApplePie.png" width="200px" height="100px" />
+                    <p id="item-name">MCD Apple Pie</p>
+                    <p id="item-price">RM7.70</p>
+                    <p>(buy 3 or more to get 15% discount)</p>
+                    <br />
+                    <input type="number" min="0" asp-for="Food.McApplePie" placeholder="MCD Apple Pie" />
+
+                </div>
+                
+            </div>
+            <button class="btn btn-primary mt-1" type="submit">Order</button>
+        </div>
+
+    </form>
+</body>

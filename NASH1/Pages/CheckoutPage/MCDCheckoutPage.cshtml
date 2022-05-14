@@ -1,0 +1,17 @@
+﻿@page
+@model NASH1.Pages.MCDCheckoutPageModel
+@{
+}
+<h1 class="mainTitle">
+    This is your food order 
+</h1>
+<h2 class="mainSubTitle">
+    Your driver is on the way, please be patient
+</h2>
+   <table class="table">   
+<tr><th>FoodName</th><th>FoodAmount</th><td>Sub Total(RM)</td></tr>  
+<tr><td>MCD Burger</td><td>@Model.McBurger</td><td>@Model.MCDBurgerSubPrice</td></tr> 
+<tr><td>MCD Apple Pie</td><td>@Model.McApplePie</td><td>@Model.McdApplePieSubPrice</td></tr>  
+<tr><td>MCD Flurry Oreo</td><td>@Model.McFurryOreo</td><td>@Model.MCDFlurrySubPrice</td></tr>  
+<tr><td>Total Price(RM)</td><td></td><td>@Model.FoodPrice</td></tr>  
+</table>  

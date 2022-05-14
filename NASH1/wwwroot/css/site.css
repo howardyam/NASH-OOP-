@@ -15,7 +15,7 @@ html {
 
 body {
     
-    background-image: url("Cover1.jpg");
+    
     text-align: justify-all;
     background-color: lightgrey;
     margin: 0;
@@ -191,8 +191,15 @@ form {
     width: 900px;
     height: 400px;
     margin-top: 50px;
-    display: flex;
+    display: flex ;
     margin:auto;
+}
+.cover2 {
+    width: 900px;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    margin: auto;
 }
 
    .box{
@@ -212,16 +219,6 @@ form {
 #menu {
     background: whitesmoke;
 }
-
-.brand-logo {
-    padding: 0 30px;
-}
-
-    .brand-logo img {
-        width: 150px;
-        height: 150px;
-        margin-top: -20px;
-    }
 
 .menu-item a {
     display: block;
@@ -294,8 +291,8 @@ form {
 
 #item-card {
     
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 400px;
     padding: 10px;
     margin: 10px 0 10px 0;
     display: inline-block;
@@ -303,6 +300,16 @@ form {
     background-color:white;
     cursor: pointer;
     
+}
+#item-card2 {
+    width: 250px;
+    height: 300px;
+    padding: 5px;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
 }
 
 #card-top {
@@ -347,4 +354,47 @@ form {
     #row2 {
         width: 45vw;
     }
+}
+
+
+#card-top {
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+
+.fooddiscount {
+    font-size=1px;
+    font-weight=10;
+    color: black;
+    text-align: center;
+}
+
+.mainSubTitle {
+    text-size-adjust: auto;
+    padding: initial;
+    margin: 10px 0 20px 0;
+    color: black;
+    text-align: center;
+}
+
+.mainTitle {
+    padding: initial;
+    font-weight: 900;
+    font-size: 70px;
+    margin: 200px 0 20px 0;
+    text-align: center;
+    color: black;
+}
+
+.page2title
+{
+    font-size:50px;
+    text-align:center;
+    margin: 200px 0 20px 0;
+}
+
+.buttonmargin{
+    margin-bottom:auto;
+    padding-bottom:initial;
 }

@@ -45,10 +45,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Pages\Orders\FoodRestaurant\" />
-    <Folder Include="wwwroot\images\pictures\" />
-  </ItemGroup>
-
 </Project>

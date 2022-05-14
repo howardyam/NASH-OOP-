@@ -1,0 +1,44 @@
+﻿@page
+@model NASH1.Pages.Restaurant.NicaPlusModel
+@{
+}
+
+
+<body>
+    <h1 class="mainResSubTiltle"></h1>
+    <form method="post">
+        <div class="cover">
+            <div class="box">
+                <div id="item-card">
+                    <div id="card-top">
+                    </div>
+                    <img src="~/images/ChocolateBingsu.png" width="200px" height="100px" />
+                    <p id="item-name">Chocolate Bingsu</p>
+                    <p id="item-price">RM12.30</p>
+                    <br />
+                    <br />
+
+                    <input type="number" min="0" asp-for="Food.ChocolateBingsu" placeholder="ChocolateBingsu" />
+
+                </div>
+            </div>
+            <div class="box">
+                <div id="item-card">
+                    <img src="~/images/MangoBinsu.png" width="200px" height="100px" />
+                    <p id="item-name">Mango Bingsu</p>
+                    <p id="item-price">RM14.30</p>
+                    <p>(buy 2 or more to get 15% discount)</p>
+
+                    <input type="number" min="0" asp-for="Food.MangoBingsu" placeholder="MangoBingsu" />
+
+                </div>
+
+            </div>
+            <button class="btn btn-primary mt-1" type="submit">Order </button>
+        </div>
+    </form>
+</body>
+
+
+
+

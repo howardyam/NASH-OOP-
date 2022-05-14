@@ -1,4 +1,6 @@
-﻿namespace NASH1.Models
+﻿
+
+namespace NASH1.Models
 {
     public class FoodModel
     {
@@ -6,15 +8,30 @@
 
         public string FoodName { get; set; }
 
-        public double BasePrice { get; set; } 
+      
+        //Food Amount
+        public int KFCBurger { get; set; } 
+        public int KFCWedges { get; set; } 
+        public int KFCChicken { get; set; }
+        public int McBurger { get; set; }
+        public int McFurryOreo { get; set; }
+        public int McApplePie { get; set; }
+        
+        public int ChocolateBingsu { get; set; }
+        public int MangoBingsu { get; set; }
 
-        public double KFCBurger { get; set; } 
-        public double KFCWedges { get; set; } 
-        public double KFChicken { get; set; } 
+        /*public double FoodPrice { get; set; }*/
+
+        public string RestaurantName { get; set; }
+        public string RestaurantImage { get; set; }
+        public string? Pagename { get; set; }
+
+        
        
 
-        public float FinalPrice { get; set; }
-
-
+  
     }
+
+   
+
 }
