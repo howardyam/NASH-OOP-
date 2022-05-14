@@ -9,21 +9,21 @@ namespace NASH1.Pages
 
 
         public double FoodPrice { get; set; }
-        
+
 
 
         //Food amount
-       
+
         public int McBurger { get; set; }
         public int McFurryOreo { get; set; }
         public int McApplePie { get; set; }
 
-    
+
 
         //Subprice for each food order
 
 
-       
+
 
         public double McdApplePieSubPrice { get; set; }
         public double MCDBurgerSubPrice { get; set; }
@@ -31,6 +31,10 @@ namespace NASH1.Pages
         public double MCDFlurrySubPrice { get; set; }
 
 
-       
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Address { get; set; }
+        public int Tel { get; set; }
+
     }
 }

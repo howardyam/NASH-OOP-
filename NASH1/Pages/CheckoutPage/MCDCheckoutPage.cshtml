@@ -8,6 +8,11 @@
 <h2 class="mainSubTitle">
     Your driver is on the way, please be patient
 </h2>
+<table class="table">
+    <tr><th>Name</th><th>Tel</th><td>Email</td><td>Address</td></tr>
+    <tr><td>@Model.Name</td><td>@Model.Tel</td><td>@Model.Email</td><td>@Model.Address</td></tr>
+</table>
+<br />
    <table class="table">   
 <tr><th>FoodName</th><th>FoodAmount</th><td>Sub Total(RM)</td></tr>  
 <tr><td>MCD Burger</td><td>@Model.McBurger</td><td>@Model.MCDBurgerSubPrice</td></tr> 
@@ -15,3 +20,4 @@
 <tr><td>MCD Flurry Oreo</td><td>@Model.McFurryOreo</td><td>@Model.MCDFlurrySubPrice</td></tr>  
 <tr><td>Total Price(RM)</td><td></td><td>@Model.FoodPrice</td></tr>  
 </table>  
+

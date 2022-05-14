@@ -8,23 +8,28 @@ namespace NASH1.Pages.CheckoutPage.NicaPlus
     {
 
 
-        
+
         public double FoodPrice { get; set; }
-       
+
 
 
         //Food amount
-        
+
         public int ChocolateBingsu { get; set; }
         public int MangoBingsu { get; set; }
 
         //Subprice for each food order
 
 
-       
+
 
         public double ChocolateBingsuSubPrice { get; set; }
 
         public double MangoBingsuSubPrice { get; set; }
+
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Address { get; set; }
+        public int Tel { get; set; }
     }
 }

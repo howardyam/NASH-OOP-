@@ -3,14 +3,20 @@
 @{
 }
 <h1 class="mainTitle">
-    This is your food order 
+    This is your food order
 </h1>
 <h2 class="mainSubTitle">
     Your driver is on the way, please be patient
 </h2>
-   <table class="table">   
-<tr><th>FoodName</th><th>FoodAmount</th><td>Sub Total(RM)</td></tr>  
-<tr><td>Chocolate Bingsu</td><td>@Model.ChocolateBingsu</td><td>@Model.ChocolateBingsuSubPrice</td></tr>  
-<tr><td>Mango Bingsu</td><td>@Model.MangoBingsu</td><td>@Model.MangoBingsuSubPrice</td></tr>  
-<tr><td>Total Price(RM)</td><td></td><td>@Model.FoodPrice</td></tr>  
-</table>  
+<table class="table">
+    <tr><th>Name</th><th>Tel</th><td>Email</td><td>Address</td></tr>
+    <tr><td>@Model.Name</td><td>@Model.Tel</td><td>@Model.Email</td><td>@Model.Address</td></tr>
+</table>
+<br />
+<table class="table">
+    <tr><th>FoodName</th><th>FoodAmount</th><td>Sub Total(RM)</td></tr>
+    <tr><td>Chocolate Bingsu</td><td>@Model.ChocolateBingsu</td><td>@Model.ChocolateBingsuSubPrice</td></tr>
+    <tr><td>Mango Bingsu</td><td>@Model.MangoBingsu</td><td>@Model.MangoBingsuSubPrice</td></tr>
+    <tr><td>Total Price(RM)</td><td></td><td>@Model.FoodPrice</td></tr>
+</table>
+

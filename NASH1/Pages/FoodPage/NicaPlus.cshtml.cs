@@ -13,6 +13,8 @@ namespace NASH1.Pages.Restaurant
 
         [BindProperty]
         public FoodModel Food { get; set; }
+        [BindProperty]
+        public InfoModel Info { get; set; }
         public double FoodPrice { get; set; }
         public double ChocolateBingsuSubPrice { get; set; }
 
@@ -49,7 +51,7 @@ namespace NASH1.Pages.Restaurant
 
 
 
-            return RedirectToPage("/CheckoutPage/NicaPlusCheckoutPage", new { FoodPrice, Food.MangoBingsu, Food.ChocolateBingsu, MangoBingsuSubPrice, ChocolateBingsuSubPrice });
+            return RedirectToPage("/CheckoutPage/NicaPlusCheckoutPage", new { FoodPrice, Food.MangoBingsu, Food.ChocolateBingsu, MangoBingsuSubPrice, ChocolateBingsuSubPrice, Info.Name, Info.Email, Info.Address, Info.Tel });
        
         }
 

@@ -13,11 +13,14 @@ namespace NASH1.Pages.Restaurant
 
         [BindProperty]
         public FoodModel Food { get; set; }
+        [BindProperty]
+        public InfoModel Info { get; set; }
         public double FoodPrice { get; set; }
         public double McdApplePieSubPrice { get; set; }
         public double MCDBurgerSubPrice { get; set; }
 
         public double MCDFlurrySubPrice { get; set; }
+
         public double PriceCalculate(int Amount, double price)
         {
             double totalprice = 0.00;
@@ -48,7 +51,7 @@ namespace NASH1.Pages.Restaurant
             McdApplePieSubPrice += PriceCalculate(Food.McApplePie, 7.70,0.85);
             FoodPrice = MCDFlurrySubPrice +MCDBurgerSubPrice +McdApplePieSubPrice;
           
-            return RedirectToPage("/CheckoutPage/MCDCheckoutPage", new { FoodPrice, Food.McApplePie, Food.McBurger, Food.McFurryOreo, MCDFlurrySubPrice , MCDBurgerSubPrice , McdApplePieSubPrice});
+            return RedirectToPage("/CheckoutPage/MCDCheckoutPage", new { FoodPrice, Food.McApplePie, Food.McBurger, Food.McFurryOreo, MCDFlurrySubPrice , MCDBurgerSubPrice , McdApplePieSubPrice, Info.Name, Info.Email, Info.Address, Info.Tel });
         }
 
     }

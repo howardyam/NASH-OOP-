@@ -82,10 +82,9 @@ form {
 
 /*StartOrder*/
 .form-style-1 {
-    background-color:lightgrey;
-    margin: 10px auto;
+   
     max-width: 400px;
-    padding: 100px 5px 100px 5px;
+    
     font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 

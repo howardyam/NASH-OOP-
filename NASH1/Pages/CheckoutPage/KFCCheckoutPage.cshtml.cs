@@ -8,11 +8,11 @@ namespace NASH1.Pages.Checkout
     [BindProperties(SupportsGet = true)]
     public class KFCCheckoutPageModel : PageModel
     {
-        
-        
-      
+
+
+
         public double FoodPrice { get; set; }
-     
+
 
 
         //Food amount
@@ -21,7 +21,7 @@ namespace NASH1.Pages.Checkout
         public int KFCWedges { get; set; }
 
         public int KFCChicken { get; set; }
-       
+
 
         //Subprice for each food order
 
